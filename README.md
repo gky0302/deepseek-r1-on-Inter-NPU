@@ -44,7 +44,7 @@ def deepseek_think_prompt(question):
 """
 
 # 初始化模型（保持你的原始路径）
-pipe = ov_genai.LLMPipeline(r"D:\OpenVINO-model\DeepseekR1-14B\deepseek\INT4-NPU_compressed_weights", device="HETERO:GPU,NPU")
+pipe = ov_genai.LLMPipeline(r"D:\OpenVINO-model\DeepseekR1-14B\deepseek\INT4-NPU_compressed_weights", device="NPU")
 
 # 修正后的生成配置
 generation_config = ov_genai.GenerationConfig(
